@@ -1,0 +1,13 @@
+<h1>All the restaurants in the app</h1>
+
+<ol>
+  <% @restaurants.each do |id, r| %>
+    <li>
+      <%= link_to r[:name], restaurant_path(id) %>
+    </li>
+  <% end %>
+</ol>
+
+
+<%#=  %>
+<%#  %>
